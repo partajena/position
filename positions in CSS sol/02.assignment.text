@@ -1,0 +1,26 @@
+Absolute and relative positioning are two concepts used in web development and graphic design to control the placement of elements within a document. These positioning techniques are often employed using CSS (Cascading Style Sheets). Let's explore the differences between absolute and relative positioning:
+
+1. **Absolute Positioning:**
+   - **Definition:** In absolute positioning, an element is positioned relative to its closest positioned (not static) ancestor, or to the initial containing block if no positioned ancestor is found.
+   - **Behavior:** The element is taken out of the normal document flow, meaning it doesn't affect the position of other elements. Instead, it is placed precisely based on specified coordinates (top, right, bottom, left).
+   - **Example:**
+     ```css
+     .absolute-positioned {
+       position: absolute;
+       top: 20px;
+       left: 30px;
+     }
+     ```
+
+2. **Relative Positioning:**
+   - **Definition:** In relative positioning, an element is positioned relative to its normal position in the document flow. It doesn't affect the positioning of other elements as they would if the element were absolutely positioned.
+   - **Behavior:** The element is still a part of the normal document flow, and its final position is determined by shifting from its normal position using offset properties (top, right, bottom, left).
+   - **Example:**
+     ```css
+     .relative-positioned {
+       position: relative;
+       top: 10px;
+       left: 20px;
+     }
+     ```
+
